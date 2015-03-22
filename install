@@ -1,0 +1,7 @@
+gem build *.gemspec
+gem install *.gem
+
+if [[ $* == *-r* ]]; then
+    pry -Ijava_bytecode
+fi
+
